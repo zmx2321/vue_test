@@ -1,0 +1,717 @@
+{
+  "code": 0,
+  "totalSize": 71,
+  "success": true,
+  "content": [
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "嵊州服务区",
+      "longitude": "120.84889",
+      "latitude": "29.793258",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "开化龙顶服务区",
+      "longitude": "118.328546",
+      "latitude": "29.088618",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "南浔服务区",
+      "longitude": "120.256996",
+      "latitude": "30.798189",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "德清服务区",
+      "longitude": "120.309926",
+      "latitude": "30.587918",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "武义服务区",
+      "longitude": "119.951959",
+      "latitude": "28.870241",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "常山服务区",
+      "longitude": "118.467473",
+      "latitude": "28.916051",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": 107,
+      "parking_space_total": 383,
+      "busy_level": 28,
+      "serverpart_name": "湖州服务区",
+      "longitude": "120.228165",
+      "latitude": "30.897736",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "磐安服务区",
+      "longitude": "120.42288",
+      "latitude": "28.989513",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "萧山服务区",
+      "longitude": "120.253857",
+      "latitude": "29.980179",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "次坞服务区",
+      "longitude": "120.163426",
+      "latitude": "29.869312",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "兰溪服务区",
+      "longitude": "119.482095",
+      "latitude": "29.138882",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "青田服务区",
+      "longitude": "120.185816",
+      "latitude": "28.272857",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "金华服务区",
+      "longitude": "119.892979",
+      "latitude": "29.251286",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "周王庙服务区",
+      "longitude": "120.526319",
+      "latitude": "30.443782",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "煤山服务区",
+      "longitude": "119.657397",
+      "latitude": "31.055932",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "临安服务区",
+      "longitude": "119.541654",
+      "latitude": "30.211325",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "衢江服务区",
+      "longitude": "118.962115",
+      "latitude": "29.240329",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "东阳服务区",
+      "longitude": "120.356587",
+      "latitude": "29.345617",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "太湖服务区",
+      "longitude": "119.948565",
+      "latitude": "31.127567",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": 49,
+      "parking_space_total": 139,
+      "busy_level": 35,
+      "serverpart_name": "常山停车区",
+      "longitude": "118.745389",
+      "latitude": "29.17735",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "松阳服务区",
+      "longitude": "119.443259",
+      "latitude": "28.452585",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "衢州服务区",
+      "longitude": "119.069506",
+      "latitude": "29.045735",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": 45,
+      "parking_space_total": 364,
+      "busy_level": 12,
+      "serverpart_name": "仙居服务区",
+      "longitude": "120.57249",
+      "latitude": "28.746225",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": 245,
+      "parking_space_total": 414,
+      "busy_level": 59,
+      "serverpart_name": "青山服务区",
+      "longitude": "120.061267",
+      "latitude": "30.6702",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "长兴服务区",
+      "longitude": "119.737511",
+      "latitude": "30.93335",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": 13,
+      "parking_space_total": 119,
+      "busy_level": 11,
+      "serverpart_name": "庆元服务区",
+      "longitude": "118.953293",
+      "latitude": "27.779201",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "灵溪服务区",
+      "longitude": "119.147553",
+      "latitude": "28.916865",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": 8,
+      "parking_space_total": 101,
+      "busy_level": 8,
+      "serverpart_name": "遂昌停车区",
+      "longitude": "119.29901",
+      "latitude": "28.61769",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "永嘉服务区",
+      "longitude": "120.757587",
+      "latitude": "28.371332",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "德清西服务区",
+      "longitude": "119.917682",
+      "latitude": "30.507142",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "宁海服务区",
+      "longitude": "121.456536",
+      "latitude": "29.389463",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "临海服务区",
+      "longitude": "120.992622",
+      "latitude": "28.87714",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "天台服务区",
+      "longitude": "121.084849",
+      "latitude": "29.138962",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "丽水服务区",
+      "longitude": "119.870252",
+      "latitude": "28.499507",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "桥头服务区",
+      "longitude": "120.523711",
+      "latitude": "28.143967",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "龙泉服务区",
+      "longitude": "119.104048",
+      "latitude": "28.028709",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "仙居白塔服务区",
+      "longitude": "120.644043",
+      "latitude": "28.733500",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "开化服务区",
+      "longitude": "118.413006",
+      "latitude": "29.291098",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "江山服务区",
+      "longitude": "118.68378",
+      "latitude": "28.813988",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "嘉兴服务区",
+      "longitude": "120.684368",
+      "latitude": "30.626298",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "诸永诸暨服务区",
+      "longitude": "120.293815",
+      "latitude": "29.688308",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "芦浦停车区",
+      "longitude": "121.226556",
+      "latitude": "28.196978",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "云和服务区",
+      "longitude": "119.651351",
+      "latitude": "28.153791",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "奉化服务区",
+      "longitude": "121.455642",
+      "latitude": "29.623475",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "北岸服务区",
+      "longitude": "121.037823",
+      "latitude": "30.599157",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "富阳服务区",
+      "longitude": "119.840064",
+      "latitude": "30.048394",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "永康服务区",
+      "longitude": "120.176373",
+      "latitude": "28.795459",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "方岩服务区",
+      "longitude": "120.205435",
+      "latitude": "28.979018",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": 227,
+      "parking_space_total": 336,
+      "busy_level": 68,
+      "serverpart_name": "诸暨服务区",
+      "longitude": "120.17423",
+      "latitude": "29.665148",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "诸永东阳服务区",
+      "longitude": "120.414377",
+      "latitude": "29.306975",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "台州服务区",
+      "longitude": "121.234248",
+      "latitude": "28.883628",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "梅城停车区",
+      "longitude": "119.476701",
+      "latitude": "29.499715",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "建金兰溪服务区",
+      "longitude": "119.613497",
+      "latitude": "29.351573",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "新昌服务区",
+      "longitude": "120.90987",
+      "latitude": "29.484741",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": 116,
+      "parking_space_total": 480,
+      "busy_level": 24,
+      "serverpart_name": "长安服务区",
+      "longitude": "120.471884",
+      "latitude": "30.493403",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "舟山服务区",
+      "longitude": "121.91084",
+      "latitude": "30.05946",
+      "status": "正常",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "龙岗服务区",
+      "longitude": "119.11428",
+      "latitude": "30.165326",
+      "status": "未录入",
+      "region_name": "浙北区域"
+    },
+    {
+      "park_vehicle_total": 21,
+      "parking_space_total": 31,
+      "busy_level": 68,
+      "serverpart_name": "芳村停车区",
+      "longitude": "118.623533",
+      "latitude": "29.014514",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "余姚服务区",
+      "longitude": "121.12128",
+      "latitude": "30.01324",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "嘉绍南停车区",
+      "longitude": "120.781658",
+      "latitude": "30.20626",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "莲都停车区",
+      "longitude": "119.845591",
+      "latitude": "28.361911",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": 213,
+      "parking_space_total": 410,
+      "busy_level": 52,
+      "serverpart_name": "绍兴服务区",
+      "longitude": "120.649577",
+      "latitude": "30.104311",
+      "status": "未录入",
+      "region_name": "浙东区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "仙霞服务区",
+      "longitude": "118.542646",
+      "latitude": "28.485743",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "后坞停车区",
+      "longitude": "118.753654",
+      "latitude": "28.967772",
+      "status": "未录入",
+      "region_name": "浙西区域"
+    },
+    {
+      "park_vehicle_total": 6,
+      "parking_space_total": 140,
+      "busy_level": 4,
+      "serverpart_name": "南浦溪服务区",
+      "longitude": "119.933036",
+      "latitude": "27.629307",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": 85,
+      "parking_space_total": 106,
+      "busy_level": 80,
+      "serverpart_name": "高楼停车区",
+      "longitude": "120.294904",
+      "latitude": "27.75687",
+      "status": "未录入",
+      "region_name": "浙南区域"
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "文成服务区",
+      "longitude": "119.986707",
+      "latitude": "27.805263",
+      "status": "未录入",
+      "region_name": null
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "於潜服务区",
+      "longitude": "119.379921",
+      "latitude": "30.245996",
+      "status": "未录入",
+      "region_name": null
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "景宁服务区",
+      "longitude": "119.647009",
+      "latitude": "27.889756",
+      "status": "未录入",
+      "region_name": null
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "潜川停车区",
+      "longitude": "119.372725",
+      "latitude": "30.126899",
+      "status": "未录入",
+      "region_name": null
+    },
+    {
+      "park_vehicle_total": null,
+      "parking_space_total": null,
+      "busy_level": null,
+      "serverpart_name": "瑶琳服务区",
+      "longitude": "119.524278",
+      "latitude": "29.894703",
+      "status": "未录入",
+      "region_name": null
+    }
+  ]
+}

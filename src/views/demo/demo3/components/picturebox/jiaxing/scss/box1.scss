@@ -1,0 +1,25 @@
+:deep.picture_box {
+  .block {
+    &[data-content='No-1-1'] {
+      width: 70px;
+      height: 42px;
+      top: 32.6%;
+      left: 0.4%;
+      line-height: 42px;
+    }
+    &[data-content='No-1-2'] {
+      width: 107px;
+      height: 38px;
+      top: 47.6%;
+      left: 23.1%;
+      line-height: 38px;
+    }
+    &[data-content='No-1-3'] {
+      width: 105px;
+      height: 61px;
+      top: 3.3%;
+      left: 67.6%;
+      line-height: 61px;
+    }
+  }
+}

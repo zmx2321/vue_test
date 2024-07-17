@@ -1,0 +1,32 @@
+/**
+ * layer
+ * 规定全局样式变量
+ */
+
+$headNavHeight: 60px; // 头部高度
+$sideBarWidth: 230px; // 侧边栏宽度
+
+$mainBg: #324057; // 全局色调
+
+$sideHighColor: #4e658c; // 侧边栏高亮颜色
+$sideIconColor: #409eff; // 侧边栏小图标颜色
+
+// 字体颜色
+$layerFontColor: #fff; // 框架整体字体颜色 - 头部，侧栏
+
+// 按钮颜色
+$globalBtnColor: #1b74ff; // 全局按钮颜色
+
+/*********** 大屏 ***********/
+// $mainWidth: 1920px;
+$mainWidth: 1900px;
+$mainHeight: 1080px;
+
+$numFontFamily: DINAlternate-Bold, DINAlternate;
+$pingFontFamily: PingFangSC-Regular, PingFang SC;
+$lumosTxt: 0px 2px 9px #5493ff, 0px 1px 1px rgba(255, 255, 255, 0.5);
+
+$lgnMainColor: #163565;
+$mainTopHeight: 42px; // 主体部分标题部分
+
+$loadingMask: rgba(22, 54, 103, 0.86);
