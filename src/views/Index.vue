@@ -1,22 +1,28 @@
 <template>
-  <!-- <section class="main_wrap" v-waterMarker="{ text: '版权所有', textColor: 'rgba(180, 180, 180, 0.4)' }"> -->
-  <section class="main_wrap"></section>
-
-  <!-- 水印 -->
-  <water-mark />
+  <demo v-if="pageType === 'demo'" />
+  <single v-else />
 </template>
 
 <script setup>
-//   import { ref } from 'vue'
+import { ref } from 'vue'
+import Demo from './demo/index.vue'
+import Single from './single/index.vue'
+
+import { useRouter } from 'vue-router'
+const router = useRouter()
+
+const pageType = ref(import.meta.env.VITE_PUBLIC_PAGETYPE)
+
+switch (pageType.value) {
+  case 'demo':
+    router.push('/demo')
+    break
+  case 'single':
+    router.push('/single')
+    break
+  default:
+    break
+}
 </script>
 
-<style lang="scss" scoped>
-.main_wrap {
-  width: 100%;
-  height: 100%;
-  background: #091f3f;
-  color: #fff;
-  padding-bottom: 1px;
-}
-</style>
- 
+<style scoped></style>

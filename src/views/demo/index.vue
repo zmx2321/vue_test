@@ -1,12 +1,8 @@
 <template>
   <section class="demo_wrap">
     <el-menu :default-active="activeIndex" class="el-menu-demo" mode="horizontal" @select="handleSelect">
-      <el-menu-item index="0">大屏自适应</el-menu-item>
-      <el-menu-item index="1">图表demo</el-menu-item>
-      <el-menu-item index="2">地图demo</el-menu-item>
-      <el-menu-item index="3">demo3</el-menu-item>
-      <el-menu-item index="4">openlayer</el-menu-item>
-      <el-menu-item index="5">demo5</el-menu-item>
+      <el-menu-item index="1">demo1</el-menu-item>
+      <el-menu-item index="2">demo2</el-menu-item>
     </el-menu>
 
     <div class="demo_main">
@@ -30,28 +26,14 @@ defineProps({
   } */
 })
 
-const activeIndex = ref('5')
+const activeIndex = ref('1')
 const handleSelect = (key) => {
-  console.log(key)
-
   switch (key) {
-    case '0':
-      router.push('/demo/screen')
-      break
     case '1':
       router.push('/demo/demo1')
       break
     case '2':
       router.push('/demo/demo2')
-      break
-    case '3':
-      router.push('/demo/demo3')
-      break
-    case '4':
-      router.push('/demo/demo4')
-      break
-    case '5':
-      router.push('/demo/demo5')
       break
     default:
       break
@@ -61,18 +43,13 @@ const handleSelect = (key) => {
 
 <style lang="scss" scoped>
 .demo_wrap {
-  position: fixed;
-  width: 100vw;
-  height: 100vh;
-  left: 0;
-  top: 0;
-
   .demo_main {
     width: 98%;
+    height: calc(100vh - $headNavHeight - 40px);
+    min-height: 300px;
     margin: 20px auto;
-    height: 75vh;
     border: solid 1px #a7a7a7;
-    overflow: auto;
+    overflow: hidden;
   }
 }
 </style>

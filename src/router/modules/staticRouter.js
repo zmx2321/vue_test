@@ -6,12 +6,7 @@
 export const staticRouter = [
   {
     path: '/',
-    redirect: '/demo/demo5'
-  },
-  {
-    path: '/demo/screen',
-    name: 'screen',
-    component: () => import('@/views/demo/screen/index.vue')
+    redirect: '/home'
   },
   {
     path: '/home',
@@ -26,11 +21,10 @@ export const staticRouter = [
     path: '/demo',
     name: 'Demo',
     redirect: '/demo/demo1',
-    component: () => import('@/views/demo/index.vue'),
     meta: {
-      title: 'Demo',
-      icon: 'House'
+      title: 'demo'
     },
+    component: () => import('@/views/demo/index.vue'),
     children: [
       {
         path: '/demo/demo1',
@@ -49,33 +43,36 @@ export const staticRouter = [
           keepAlive: true
         },
         component: () => import('@/views/demo/demo2/index.vue')
-      },
+      }
+    ]
+  },
+  {
+    path: '/single',
+    name: 'Single',
+    redirect: '/single/single1',
+    // redirect: '/single/index',
+    component: () => import('@/views/single/index.vue'),
+    meta: {
+      title: 'Single'
+    },
+    children: [
       {
-        path: '/demo/demo3',
-        name: 'Demo3',
+        path: '/single/single1',
+        name: 'Single1',
         meta: {
-          title: 'demo3',
+          title: 'single1',
           keepAlive: true
         },
-        component: () => import('@/views/demo/demo3/index.vue')
+        component: () => import('@/views/single/single1/index.vue')
       },
       {
-        path: '/demo/demo4',
-        name: 'Demo4',
+        path: '/single/single2',
+        name: 'Single2',
         meta: {
-          title: 'demo4',
+          title: 'single2',
           keepAlive: true
         },
-        component: () => import('@/views/demo/demo4/index.vue')
-      },
-      {
-        path: '/demo/demo5',
-        name: 'Demo5',
-        meta: {
-          title: 'demo5',
-          keepAlive: true
-        },
-        component: () => import('@/views/demo/demo5/index.vue')
+        component: () => import('@/views/single/single2/index.vue')
       }
     ]
   }

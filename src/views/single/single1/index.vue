@@ -1,6 +1,6 @@
 <template>
   <section>
-    demo1
+    single1
   </section>
 </template>
 

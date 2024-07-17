@@ -11,12 +11,6 @@
   overflow: hidden;
   content: '.';
 }
-/* inline-block */
-.f-ib li {
-  display: inline-block;
-  *display: inline;
-  *zoom: 1;
-}
 /* 浮动 */
 .f-fl {
   float: left;

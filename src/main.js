@@ -1,4 +1,3 @@
-import DataVVue3 from '@kjgl77/datav-vue3'
 import { createApp } from 'vue'
 import App from './App.vue'
 // 页面样式
@@ -25,5 +24,4 @@ Object.entries(ElementPlusIconsVue).forEach(([key, component]) => {
   app.component(key, component)
 })
 
-app.use(DataVVue3)
 app.use(pinia).use(directives).use(router).use(components).mount('#app')

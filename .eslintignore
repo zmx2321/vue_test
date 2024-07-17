@@ -10,14 +10,14 @@ lerna-debug.log*
 
 node_modules
 dist
-vue3-demo
+vue_test
 dist-ssr
 *.local
 .history
 
-/src/views/demo
-/src/utils/index.js
-/src/components/SacaleAuto/index.vue
+/src
+; /src/views/demo
+; /src/utils/index.js
 
 # Editor directories and files
 .vscode/*
@@ -36,3 +36,5 @@ package.json
 
 auto-imports.d.ts
 components.d.ts
+
+
