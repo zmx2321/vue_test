@@ -1,6 +1,18 @@
 <template>
   <section>
-    <upload-tool @getFile="getFile" />
+    <upload-tool @verifyFileType="verifyFileType" @getFile="getFile">
+      <template #tip>
+        <span>请上传xls或者xlsx格式</span>
+      </template>
+    </upload-tool>
+
+    <div class="detail_wrap">
+      <div class="detail_cont" v-if="JSON.stringify(excelResData) !== '[]'" v-for="(item, index) in excelResData"
+        :key="index">
+        <h3>{{ item.sheetName }}</h3>
+        <div class="table_detail" v-html="dealExcel(item.sheetList)"></div>
+      </div>
+    </div>
   </section>
 </template>
 
@@ -8,21 +20,7 @@
 import { ref } from 'vue';
 import * as XLSX from 'xlsx';
 
-/* function chooseExcel(e: any) {
-  const files = e.target.files;
-  if (files.length <= 0) {
-    return false;
-  }
-  else if (!/\.(xls|xlsx)$/.test(files[0].name.toLowerCase())) {
-    ElMessage({
-      message: "上传格式不正确，请上传xls或者xlsx格式！",
-      type: "error",
-    });
-    return false;
-  }
-} */
-
-const excelData = ref(null)
+const excelResData = ref([])
 
 const readFile = (file) => {
   return new Promise((resolve) => {
@@ -34,58 +32,108 @@ const readFile = (file) => {
   })
 }
 
+const sheetToTable = sheet => {
+  // 创建一个<table>元素
+  var table = document.createElement('table');
+  // table.setAttribute('border', '1');
+  // 遍历XLSX.utils.sheet_to_json的结果
+  sheet.forEach(function (row) {
+    // 创建一个<tr>元素
+    var tr = document.createElement('tr');
+    // 遍历每一行的键值对
+    for (var key in row) {
+      // 创建一个<td>元素
+      var td = document.createElement('td');
+      // 设置<td>元素的文本
+      td.appendChild(document.createTextNode(row[key]));
+      // 将<td>元素添加到<tr>元素中
+      tr.appendChild(td);
+    }
+    // 将<tr>元素添加到<table>元素中
+    table.appendChild(tr);
+  });
+  // 将<table>元素添加到HTML文档中
+  return table
+  // document.body.appendChild(table);
+}
+
+const verifyFileType = (file, next) => {
+  if (!/\.(xls|xlsx)$/.test(file.name.toLowerCase())) {
+    ElMessage({
+      message: "上传格式不正确，请上传xls或者xlsx格式！",
+      type: "error",
+    });
+    next(false)
+    return
+  }
+  next(true)
+}
+
 const getFile = async (file) => {
-  // console.log("文件改变后触发", file, file.raw)
-
   let dataBinary = await readFile(file.raw);
-  console.log(dataBinary)
   let workbook = XLSX.read(dataBinary, { type: 'binary', cellDates: true });
-  console.log(workbook)
-  let worksheet = workbook.Sheets[workbook.SheetNames[0]];
-  // excelData.value = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-  excelData.value = XLSX.utils.sheet_to_json(worksheet, { range: 1, header: 1, defval: '' });
-  console.log(excelData.value)
 
-  // XLSX.writeFile(excelData.value, 'out.xlsx');
+  workbook.SheetNames.forEach(SheetName => {
+    // workbook.Sheets[SheetName] = XLSX.utils.sheet_to_json(workbook.Sheets[SheetName], { range: 1, header: 1, defval: '' })
+    workbook.Sheets[SheetName] = XLSX.utils.sheet_to_json(workbook.Sheets[SheetName], { header: 1, defval: '' })
+  })
 
-  // dealExcel(excelData.value);
-
-
-  /* const reader = new FileReader();
-  reader.readAsArrayBuffer(file.raw);
-  console.log(reader) */
-  /* reader.onload = (e) => {
-    console.log(e)
-    const data = new Uint8Array(e.target.result);
-    console.log(data)
-    const workbook = XLSX.read(data, { type: 'array' });
-    const firstSheetName = workbook.SheetNames[0];
-    const worksheet = workbook.Sheets[firstSheetName];
-    excelData.value = XLSX.utils.sheet_to_json(worksheet, { header: 1 });
-    console.log(excelData.value)
-  }; */
-  // reader.readAsArrayBuffer(file);
+  for (let key in workbook.Sheets) {
+    excelResData.value.push({
+      sheetName: key,
+      sheetList: workbook.Sheets[key]
+    })
+  }
 };
 
-function dealExcel(ws) {
-  let exmap = {
-    日期: "date",
-    编号: "proNo",
-    产品名称: "name",
-    数量: "count",
-  };
-  ws.forEach((sourceObj) => {
-    Object.keys(sourceObj).map((keys) => {
-      let newKey = exmap[keys];
-      if (newKey) {
-        sourceObj[newKey] = sourceObj[keys];
-        delete sourceObj[keys];
-      }
-    });
-  });
-
-  console.log(ws);
+const dealExcel = (sheetList) => {
+  return sheetToTable(sheetList).outerHTML
 }
 </script>
 
-<style lang="scss" scoped></style>
+<style lang="scss" scoped>
+.detail_wrap {
+  padding: 20px;
+  width: 95%;
+  height: 80vh;
+  border: solid 1px #ccc;
+  margin: 0 auto;
+  overflow: auto;
+
+  .detail_cont {
+    &:not(:last-child) {
+      margin-bottom: 50px;
+    }
+
+    h3 {
+      margin-bottom: 10px;
+    }
+
+    :deep .table_detail {
+      table {
+        tbody {
+          tr {
+            &:first-child {
+              background-color: #a3a3a3;
+            }
+
+            &:not(:first-child) {
+              &:nth-child(odd) {
+                background-color: rgb(206, 206, 206);
+              }
+            }
+          }
+        }
+
+        td {
+          padding: 5px;
+          min-width: 100px;
+          border: solid 1px #efefef;
+          text-align: center;
+          cursor: pointer;
+        }
+      }
+    }
+  }
+}
+</style>

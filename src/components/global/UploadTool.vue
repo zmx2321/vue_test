@@ -1,10 +1,10 @@
 <template>
     <el-upload class="upload_wrap" multiple :limit="limitNum" :file-list="fileList" :auto-upload="false"
         :before-remove="beforeRemove" :on-exceed="handleExceed" :on-preview="handlePreview" :on-change="changeFile">
-        <el-button type="primary">Click to upload</el-button>
+        <el-button>点击上传</el-button>
         <template #tip>
             <div class="el-upload__tip">
-                jpg/png files with a size less than 500KB.
+                <slot name="tip"></slot>
             </div>
         </template>
     </el-upload>
@@ -12,19 +12,13 @@
 
 <script setup>
 import { ref, getCurrentInstance } from 'vue';
-// 组件传参
-import mittBus from '@/utils/mittBus' // mitt
-
-/* // store
-import { gisDataStore } from '@/store/modules/gis.js'
-const gisStoreData = gisDataStore()
-const { setKmlTempFile } = gisDataStore() // store */
+import { ElMessage } from 'element-plus';
 
 // poxy对象
 const { proxy } = getCurrentInstance();
 
 // 子组件自定义事件
-const emit = defineEmits(['getFile'])
+const emit = defineEmits(['verifyFileType', 'getFile'])
 
 const fileList = ref([])
 const limitNum = ref(1)
@@ -40,31 +34,33 @@ const beforeRemove = (file) => {
 }
 
 // 限制提示
-const handleExceed = (file) => {
-    proxy.$modal.alert(`文件超出上限`);
+const handleExceed = () => {
+    ElMessage.warning(`当前限制选择 ${limitNum.value} 个文件`)
 }
 
 // 点击文件
-const handlePreview = (file) => {
+const handlePreview = file => {
     console.log("点击文件", file)
+}
 
-    // mittBus.emit('addTestKmlFile', file)
+// 校验文件类型
+const verifyFileType = (file, next) => {
+    emit('verifyFileType', file, flag => {
+        if (!flag) {
+            fileList.value = fileList.value.pop()
+        }
 
-    /* console.log("获取文件流加载kml", file)
-    const reader = new FileReader();
-    reader.onload = (e) => {
-        const text = e.target.result;
-        console.log(text)
-
-    }; */
-    // reader.readAsText(file);
+        next(flag)
+    })
 }
 
 // 文件改变后触发
-const changeFile = (file) => {
-    // console.log("文件改变后触发", file, file.raw)
-
-    emit('getFile', file)
+const changeFile = file => {
+    let flag = verifyFileType(file, flag => {
+        if (flag) {
+            emit('getFile', file)
+        }
+    })
 }
 </script>
 
@@ -76,6 +72,5 @@ const changeFile = (file) => {
         max-height: 100px;
         overflow-y: auto;
     }
-
 }
 </style>
