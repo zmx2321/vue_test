@@ -1,1 +1,0 @@
-import{_ as e}from"./index-6ad4a426.js";import{a as o,o as c}from"./vue-54dfc68a.js";const n={};function r(t,s){return c(),o("section",null," demo2 ")}const f=e(n,[["render",r]]);export{f as default};
